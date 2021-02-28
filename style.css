@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: 0;
+  outline: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #3c50ae, #764ba2);
+  font-size: 18px;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4em;
+  color: white;
+  font-style: italic;
+}
+
+.todo-container {
+  width: 30em;
+  min-height: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.todo-container > * {
+  margin: 20px 0;
+}
+
+.add-input,
+.todo-item > p {
+  flex-basis: 80%;
+  height: 60px;
+  border-radius: 10px;
+  padding: 2%;
+  color: #764ba2;
+  font-size: 1.3em;
+  background-color: white;
+}
+
+input::placeholder {
+  color: #764ba2;
+}
+
+.add-button {
+  width: 15%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.bi {
+  font-size: 3.5em;
+  color: #764ba2;
+  cursor: pointer;
+}
+
+.todos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.todo-item {
+  margin: 10px 0;
+  flex-basis: 100%;
+  list-style-position: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item p {
+  flex-basis: 80%
+}
+
+.todo-item .bi {
+  font-size: 3.5em;
+  color: white;
+
+  height: 60px;
+  border-radius: 10px;
+  padding: 2%;
+  color: #764ba2;
+  font-size: 1.3em;
+  background-color: white;
+
+}
